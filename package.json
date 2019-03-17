@@ -1,0 +1,33 @@
+{
+  "name": "exercise-tracker",
+  "version": "1.0.0",
+  "description": "RESTful API to track users exercises",
+  "main": "server.js",
+  "scripts": {
+    "start": "node ./server.js",
+    "dev": "nodemon ./server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denisediniz/exercise-tracker.git"
+  },
+  "author": "Denise Diniz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/denisediniz/exercise-tracker/issues"
+  },
+  "homepage": "https://github.com/denisediniz/exercise-tracker#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "moment": "^2.24.0",
+    "mongo-sanitize": "^1.0.1",
+    "mongodb": "^3.1.13",
+    "mongoose": "^5.4.19",
+    "swagger-jsdoc": "^3.2.7"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
