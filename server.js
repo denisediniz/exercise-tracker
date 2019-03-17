@@ -75,12 +75,3 @@ app.use(function (err, req, res, next) {
 
 // Init server
 app.listen(PORT, () => console.log(`Server is listening on port ${PORT}`));
-
-// Close Mongo connection when the process is closed
-['exit', 'SIGINT', 'SIGTERM', 'SIGKILL', 'uncaughtException']
-	.forEach(signal => process.on(signal, () => {
-		mongoose.connection.close(false, () => {
-			console.log('MongoDb connection closed.');
-			process.exit();
-		});
-	}));
